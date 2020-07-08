@@ -1,0 +1,14 @@
+Functionalities:
+1)When we select a language ,accordingly a sentence will be appear 'Form a sentence from the given words' with jumbled words which are actually buttons 
+When we click a word(button) ,another sentence will be appear 'Formed Sentence'which contains the selected word along with a button (reform the sentence).
+
+2)'Reform the sentence' is like a reset button which means it will return all the words which we have chosen, again to the jumbled words.
+
+3)When we make a proper sentence with all the words then a button will we appear 'Check the correctness of this sentence'.
+Here the sentence we make will be checked by all the possible correct sentences .If the sentence is simantically and syntactically correct then it will display "Rigth answer!!'
+
+4)If the sentence made is incorrect then it will display "Wrong answer!!!"
+Along with that a button will appear 'Get correct answer' which when click will display the correct sentences and the 'Get correct sentence'will become 'Hide the sentence'
+which will hide the correct sentences,and after clicking to 'hide the  correct sentence'  the button will become 'Get correct sentence' and so on.
+
+I think another function ('Return' button)should be include which will return the last selected word back to the jumbled words.
