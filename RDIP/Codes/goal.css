@@ -19,4 +19,8 @@ body{
     color: blue;
     font-style: italic;
 } 
-
+button {
+    width: 80px;
+    height: 25px;
+    margin: 5px;  
+  }
