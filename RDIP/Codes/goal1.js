@@ -24,6 +24,9 @@ var v2=["राम और श्याम गयें बाजार","श्�
 function func()
 {
 	document.getElementById("p1").innerHTML=""
+	document.getElementById("p2").innerHTML=""
+    document.getElementById("p3").innerHTML=""
+    document.getElementById("sen2").style.visibility="hidden";
 	count=0
 if(document.getElementById("english").selected)
 {
@@ -45,6 +48,20 @@ if(document.getElementById("english").selected)
 		let button = document.createElement("button");
         button.innerHTML = e1[i]
         body.appendChild(button);
+
+         button.addEventListener ("click",function()
+        {
+            document.getElementById("p2").innerHTML="Formed Sentences" 
+            document.getElementById("p4").innerHTML="(after selecting words):"
+            document.getElementById("p3").innerHTML+=this.innerHTML+" ";
+            this.style.visibility="hidden";
+            count=count+1;
+            if(count == 1)
+            {
+                document.getElementById("sen2").style.visibility="visible";
+            }
+        
+        });
     }
 }
 else if (document.getElementById("hindi").selected) 
@@ -66,6 +83,20 @@ else if (document.getElementById("hindi").selected)
         let button = document.createElement("button");
         button.innerHTML = h1[i]
         body.appendChild(button)
+         button.addEventListener ("click",function()
+        {
+            document.getElementById("p2").innerHTML="Formed Sentences" 
+            document.getElementById("p4").innerHTML="(after selecting words)"
+            document.getElementById("p3").innerHTML+=this.innerHTML+" ";
+            this.style.visibility="hidden";
+            count=count+1;
+            if(count == 1)
+            {
+                document.getElementById("sen2").style.visibility="visible";
+            }
+        
+        });
+
     }
 }
 else
