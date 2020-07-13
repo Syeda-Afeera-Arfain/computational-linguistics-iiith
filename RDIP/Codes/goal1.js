@@ -46,6 +46,7 @@ if(document.getElementById("english").selected)
     for(i=0;i<e1.length;i++)
     {
 		let button = document.createElement("button");
+		button.id='button'+i;
         button.innerHTML = e1[i]
         body.appendChild(button);
 
@@ -56,7 +57,7 @@ if(document.getElementById("english").selected)
             document.getElementById("p3").innerHTML+=this.innerHTML+" ";
             this.style.visibility="hidden";
             count=count+1;
-            if(count == 1)
+            if(count>0)
             {
                 document.getElementById("sen2").style.visibility="visible";
             }
@@ -81,6 +82,7 @@ else if (document.getElementById("hindi").selected)
     for(i=0;i<h1.length;i++)
     {
         let button = document.createElement("button");
+        button.id='button'+i;
         button.innerHTML = h1[i]
         body.appendChild(button)
          button.addEventListener ("click",function()
@@ -90,7 +92,7 @@ else if (document.getElementById("hindi").selected)
             document.getElementById("p3").innerHTML+=this.innerHTML+" ";
             this.style.visibility="hidden";
             count=count+1;
-            if(count == 1)
+            if(count>0)
             {
                 document.getElementById("sen2").style.visibility="visible";
             }
@@ -104,4 +106,22 @@ else
 	alert("Select Language")
 	document.getElementById("p1").innerHTML=""
 }
-}  
+} 
+function reset()
+{
+	
+     
+    for(i=0 ;i<=e1.length-1 || i<=h1.length-1;i++)
+    
+	{
+
+        if(document.getElementById('button'+i).style.visibility=="hidden")
+    
+    	document.getElementById('button'+i).style.visibility="visible";
+	    document.getElementById('p2').innerHTML=""
+	    document.getElementById('p3').innerHTML=""
+	    document.getElementById('p4').innerHTML=""
+	    document.getElementById('sen2').style.visibility="hidden"
+    } 
+
+ }

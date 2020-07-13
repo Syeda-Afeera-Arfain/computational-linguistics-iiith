@@ -24,7 +24,8 @@ body{
 button {
     width: 80px;
     height: 25px;
-    margin: 5px;  
+    margin: 5px; 
+
   }
   p { margin: 0 !important; }
 
@@ -45,13 +46,16 @@ button {
 
 
 #p3{
-    font-size: 33px;
+    font-size: 35px;
     color: #3d3d5c;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
 }
 #sen2 {
-    width: 150px;
-    height: 20px;
-    margin: 10px;  
+      width: 170px;
+    height: 25px;
+    font-size: 15px;
+    margin: 10px; 
+    
+
 }
