@@ -259,9 +259,11 @@ function rightorwrong(){
         document.getElementById("ans").innerHTML = "Right answer!!!"
             document.getElementById("ans").style.color = "green"
             return document.getElementById("ans").innerHTML = "Right answer!!!"}
-        else
+        else{
         document.getElementById("ans").innerHTML = "Wrong answer!!!"
-        document.getElementById("ans").style.color = "red"}
+        document.getElementById("ans").style.color = "red"
+
+        document.getElementById("ID1").innerHTML = "<button id='btn3'>Get Correct Sentence</button>"}}
 
     else if(document.getElementById("hindi").selected){
     for(i=0;i<7;i++)
@@ -275,13 +277,15 @@ function rightorwrong(){
          document.getElementById("ans").innerHTML = "Right answer!!!"
             document.getElementById("ans").style.color = "green"
             return document.getElementById("ans").innerHTML = "Right answer!!!"}
-        else
+        else{
         
             document.getElementById("ans").innerHTML = "Wrong answer!!!"
-        document.getElementById("ans").style.color = "red"}
+        document.getElementById("ans").style.color = "red"
         
+     document.getElementById("ID1").innerHTML = "<button id='btn3'>Get Correct Sentence</button>"}}
+}   
     
-}
+
 
 function func1()
 {
