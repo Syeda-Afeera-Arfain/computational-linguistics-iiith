@@ -12,12 +12,12 @@ body{
 
 #line1{
     font-size: 20px;
-    color: darkblue;
+    color: #0000AA;
     font-family: Arial, Helvetica, sans-serif;
 }
 #line2{
     font-size: 20px;
-    color: blue;
+    color:#0000FF;
     font-style: italic;
     font-family: Arial, Helvetica, sans-serif;
 } 
@@ -31,20 +31,23 @@ button {
     width: 80px;
     height: 25px;
     margin: 5px; 
+    padding-bottom:25px;
 
   }
-  p { margin: 0 !important; }
+p {
+   margin: 0 !important; 
+}
 
   #p2{
     font-size: 20px;
-    color: darkblue;
+    color: #0000AA;
     display: inline;
     font-family: Arial, Helvetica, sans-serif;
 }
 #p4{
     display: inline;
     font-size: 20px;
-    color:blue;
+    color:#0000FF;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
 }
@@ -52,8 +55,8 @@ button {
 
 
 #p3{
-    font-size: 35px;
-    color: #3d3d5c;
+    font-size: 30px;
+    color: #444;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
 }
@@ -61,6 +64,7 @@ button {
      width: 290px;
     height: 25px;
     font-size: 15px;
+    padding-bottom: 25px;
     
 }
 #ans{
@@ -74,14 +78,19 @@ button {
     width: 180px;
     height: 25px;
     font-size: 15px;
-
+   padding-bottom: 25px;
 
 }
 #dispcrtans{
     font-size: 17px;
   
     line-height: 1.5;
-    font-family: Arial, sans-serif;
+    font-family: Verdana,Arial, sans-serif;
     font-style: normal;
-    color: #47476b;
+    color: #012943;
+}
+h1{
+    font-family:Verdana, Arial,sans-serif;
+    margin-left: 50px;
+    margin-top: 25px;
 }

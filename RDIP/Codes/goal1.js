@@ -252,16 +252,13 @@ function rightorwrong(){
     n1=n2=0;
     var v5=String(document.getElementById("p3").innerHTML).replace(/\s+$/,"");
     
-    if(document.getElementById("english").selected)
-    {
-        for(i=0;i<10;i++)
-        {
-            for(j=0;j<corpuseng[i].length;j++)
-            {
-                if(v5 == corpuseng[i][j])
+    if(document.getElementById("english").selected){
+    for(i=0;i<10;i++){
+        for(j=0;j<corpuseng[i].length;j++){
+            if(v5 == corpuseng[i][j])
                     n1++;}}
-        if(n1 == 1){
         
+        if(n1 == 1){
         document.getElementById("ans").innerHTML = "Right answer!!!"
             document.getElementById("ans").style.color = "green"
             return document.getElementById("ans").innerHTML = "Right answer!!!"}
@@ -421,7 +418,7 @@ function crtans()
     else if(document.getElementById("hindi").selected){
     if(document.getElementById("ID1").innerHTML == "Get Correct Sentence"){
         for(i=0;i<c2.length;i++){
-                            document.getElementById("dispcrtans").innerHTML+=temp1[i]+"<br>";
+                            document.getElementById("dispcrtans").innerHTML+=c2[i]+"<br>";
                 document.getElementById("ID1").innerHTML="Hide Correct Sentence"}}
         else if(document.getElementById("ID1").innerHTML=="Hide Correct Sentence"){
         document.getElementById("dispcrtans").innerHTML=""
