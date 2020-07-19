@@ -69,11 +69,19 @@ button {
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
 }
-#btn3{
+#ID1{
 
     width: 180px;
     height: 25px;
     font-size: 15px;
 
 
+}
+#dispcrtans{
+    font-size: 17px;
+  
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    color: #47476b;
 }
