@@ -247,6 +247,8 @@ function resetfunc2()
 
  }
 function rightorwrong(){
+    document.getElementById("ID1").innerHTML="Get Correct Sentence";
+    document.getElementById("dispcrtans").innerHTML=""
     n1=n2=0;
     var v5=String(document.getElementById("p3").innerHTML).replace(/\s+$/,"");
     
@@ -409,17 +411,25 @@ function crtans()
         for(i=0;i<c1.length;i++){
             document.getElementById("dispcrtans").innerHTML+=c1[i]+"<br>";
          document.getElementById("ID1").innerHTML="Hide Correct Sentence"}}
-        else if(document.getElementById("ID1").innerHTML="Hide Correct Sentence"){
+        else if(document.getElementById("ID1").innerHTML=="Hide Correct Sentence"){
             document.getElementById("dispcrtans").innerHTML=""
-            document.getElementById("ID1").innerHTML="Get Answers"}}
+            document.getElementById("ID1").innerHTML="Get Answers"}
+            else if(document.getElementById("ID1").innerHTML == "Get Answers"){
+            for(i=0;i<c1.length;i++){
+            document.getElementById("dispcrtans").innerHTML+=c1[i]+"<br>";
+                document.getElementById("ID1").innerHTML = "Hide Correct Sentence"}}}
     else if(document.getElementById("hindi").selected){
     if(document.getElementById("ID1").innerHTML == "Get Correct Sentence"){
-        for(i=0;i<temp1.length;i++){
+        for(i=0;i<c2.length;i++){
                             document.getElementById("dispcrtans").innerHTML+=temp1[i]+"<br>";
                 document.getElementById("ID1").innerHTML="Hide Correct Sentence"}}
-        else if(document.getElementById("ID1").innerHTML="Hide Correct Sentence"){
+        else if(document.getElementById("ID1").innerHTML=="Hide Correct Sentence"){
         document.getElementById("dispcrtans").innerHTML=""
-         document.getElementById("ID1").innerHTML="Get Answers"}}
+         document.getElementById("ID1").innerHTML="Get Answers"}
+         else if(document.getElementById("ID1").innerHTML == "Get Answers"){
+        for(i=0;i<c2.length;i++){
+     document.getElementById("dispcrtans").innerHTML+=c2[i]+"<br>";
+                document.getElementById("ID1").innerHTML = "Hide Correct Sentence"}}}
 }
         
        
